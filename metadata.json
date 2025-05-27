@@ -1,0 +1,6 @@
+{
+  "name": "UofL Code Cart Tracker",
+  "description": "A web application to track Code Carts and P-Bags, their drug and supply expiration dates, employee initials, and location. Items are categorized and highlighted as Expired, Urgent (expiring within 1 week), Expiring Soon (8-14 days), or Good Standing for proactive management.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}

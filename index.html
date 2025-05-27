@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UofL Code Cart Tracker</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230369a1'/%3E%3Cpath d='M13 6h6v7h7v6h-7v7h-6v-7H6v-6h7V6z' fill='white'/%3E%3C/svg%3E">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Custom scrollbar for webkit browsers */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f8fafc; /* slate-50 */
+      border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #94a3b8; /* slate-400 */
+      border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #64748b; /* slate-500 */
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #e2e8f0; /* slate-200, a slightly darker base for better card contrast */
+    }
+    .status-good-item {
+      border-color: #a7f3d0; /* green-200 */
+      background-color: #f0fdf4; /* green-50 */
+    }
+    .status-good-item:hover {
+       border-color: #10b981; /* green-500 */
+       box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
+    }
+    .status-expiring-soon {
+      border-color: #fcd34d; /* amber-400 */
+      background-color: #fffbeb; /* amber-50 */
+    }
+     .status-expiring-soon:hover {
+      border-color: #f59e0b; /* amber-500 */
+      box-shadow: 0 4px 12px rgba(245, 158, 11, 0.2);
+    }
+    .status-urgent {
+      border-color: #fb923c; /* orange-400 */
+      background-color: #fff7ed; /* orange-50 */
+    }
+    .status-urgent:hover {
+      border-color: #f97316; /* orange-500 */
+      box-shadow: 0 4px 12px rgba(249, 115, 22, 0.2);
+    }
+    .status-expired {
+      border-color: #f87171; /* red-400 */
+      background-color: #fee2e2; /* red-50 */
+    }
+    .status-expired:hover {
+      border-color: #ef4444; /* red-500 */
+      box-shadow: 0 4px 12px rgba(239, 68, 68, 0.2);
+    }
+    .section-card {
+      background-color: #f8fafc; /* slate-50, slightly lighter than body for clear sections */
+      border-radius: 0.75rem; /* 12px */
+      box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.07), 0 1px 2px -1px rgb(0 0 0 / 0.07); /* Softer shadow */
+      padding: 1.5rem; /* 24px */
+      margin-bottom: 2rem; /* 32px */
+    }
+    .section-header {
+      border-bottom-width: 2px;
+      padding-bottom: 0.75rem; /* 12px */
+      margin-bottom: 1.5rem; /* 24px */
+      display: flex;
+      align-items: center;
+      font-size: 1.5rem; /* 24px */
+      font-weight: 600;
+    }
+    .section-header i {
+      margin-right: 0.75rem; /* 12px */
+      font-size: 1.75rem; /* 28px */
+    }
+    .cart-type-icon {
+        margin-right: 0.5rem; /* 8px */
+        color: #475569; /* slate-600 */
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/"
+  }
+}
+</script>
+</head>
+<body class="bg-slate-200">
+  <div id="root"></div>
+  <script type="module" src="./index.tsx"></script>
+</body>
+</html><link rel="stylesheet" href="index.css">
+<script src="index.tsx" type="module"></script>
